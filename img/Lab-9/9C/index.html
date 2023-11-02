@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <nav>
+      
+    </nav>
+    <main>
+      <ul id="index" start="0">
+        
+      </ul>
+      <script>
+        (async () => {
+        const response = await fetch('.');
+        const data = await response.json();
+        var index = document.getElementById("index");
+        for (let file of data) {
+          var listitem = Object.assign(documment.createElement("li"),{
+            innerHTML = `<a href="${file.path}">${file.name}</a>`;
+          });
+          index.appendChild(listitem);
+        }
+      })();
+      </script>
+    </main>
+    <footer>
+      
+    </footer>
+  </body>
+</html>
