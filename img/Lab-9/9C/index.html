@@ -18,7 +18,7 @@
         var index = document.getElementById("index");
         for (let file of data) {
           var listitem = Object.assign(documment.createElement("li"),{
-            innerHTML = `<a href="${file.path}">${file.name}</a>`;
+            innerHTML: `<a href="${file.path}">${file.name}</a>`
           });
           index.appendChild(listitem);
         }
